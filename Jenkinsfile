@@ -52,7 +52,7 @@ pipeline {
             post {
                 success {
                     archiveArtifacts "${env.BUILD_ID}/sources/dist/prog"
-                    sh "chmod -R 777 ${env.BUILD_ID}/sources/build"
+                    sh "sudo chmod -R 777 ${env.BUILD_ID}/sources/build"
                     sh "rm -rf ${env.BUILD_ID}/sources/build ${env.BUILD_ID}/sources/dist"
                 }
             }
