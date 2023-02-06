@@ -2,6 +2,12 @@ pipeline {
     agent none
 
     stages {
+        stage('Branch') {
+            agent any
+            steps {
+                echo 'nom-de-la-branche'
+            }
+        }
 
         stage('Build') {
             agent {
