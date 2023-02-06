@@ -5,7 +5,7 @@ pipeline {
         stage('Branch') {
             agent any
             steps {
-                echo 'main1'
+                echo 'main12'
             }
         }
 
