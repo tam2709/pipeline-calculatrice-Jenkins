@@ -3,13 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Branch') {
-            agent any
-            steps {
-                echo 'main'
-            }
-        }
-
         stage('Build') {
             agent {
                 docker {
